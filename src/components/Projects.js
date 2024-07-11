@@ -70,7 +70,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-6">{t('projects')}</h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl text-blue-500 font-bold mb-6">{t('projects')}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 mb-8">
         {projects.map((project, index) => (
           <a href={project.url} key={index} className="relative group w-full h-40 sm:w-60 sm:h-60 lg:w-60 lg:h-60">

@@ -68,7 +68,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="min-h-screen flex flex-col items-center justify-center p-4">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-black">{t('contact')}</h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-black">{t('contact')}</h2>
       <form ref={form} onSubmit={sendEmail} className="bg-blue-200 p-4 rounded-lg shadow-md w-full max-w-md space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm text-gray-700 font-semibold mb-1">{t('name')}</label>
