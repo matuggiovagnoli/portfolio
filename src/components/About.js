@@ -65,7 +65,7 @@ const About = () => {
             </div>
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-start rounded-md animate-enter-5s'>
               <div className='flex flex-col items-center justify-start mb-2 rounded-t-md py-2'>
-                <img src={tools} className='w-14 h-14'/>
+                <img src={tools} alt='tools logo' className='w-14 h-14'/>
                 <h3 className='text-center font-semibold'>{t('other_tools')}</h3>
               </div>
               <ul className='text-center'>
