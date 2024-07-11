@@ -9,7 +9,7 @@ import renolit from '../media/Renolit.png';
 import coopera from '../media/coopera.png';
 import faustina from '../media/faustina.png';
 import mega from '../media/mega.png';
-import portfolio from '../media/portfolio.jpg'
+import portfolio from '../media/portfolio.jpg';
 
 const projects = [
   {
@@ -69,7 +69,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className=" min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+    <section id="projects" className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
       <h2 className="text-3xl sm:text-4xl font-bold mb-6">{t('projects')}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 mb-8">
         {projects.map((project, index) => (
@@ -88,9 +88,9 @@ const Projects = () => {
       </div>
       <h2 className="text-3xl sm:text-4xl font-bold mt-12 mb-4">{t('companies_participated')}</h2>
       <div className="w-full overflow-hidden">
-        <div className="flex space-x-8 animate-marquee items-center">
-          {companies.map((company, index) => (
-            <div key={index} className="flex-none w-24 sm:w-32">
+        <div className="flex animate-marquee items-center whitespace-nowrap">
+          {companies.concat(companies).map((company, index) => (
+            <div key={index} className="flex-none w-24 sm:w-32 lg:w-64 mx-10">
               <img src={company.logoUrl} alt={company.name} className="w-full h-auto" />
             </div>
           ))}

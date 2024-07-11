@@ -14,12 +14,12 @@ module.exports = {
           '100%': { backgroundSize: '100% 100%' },
         },
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-103%)' },
         },
         enter: {
-          '0%': { opacity: 0},
-          '100%': { opacity: 1}
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
         }
       },
       animation: {

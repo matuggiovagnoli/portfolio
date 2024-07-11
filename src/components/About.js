@@ -138,9 +138,8 @@ const About = () => {
         <div>
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">{t('professional_experience')}</h3>
           <ul className="list-disc list-inside text-sm sm:text-base">
-            <li>
-              <strong>FullStack Developer 3ns</strong> (Junio 2023 - Julio 2024)
-              <ul className="list-disc list-inside ml-5">
+              <strong>FullStack Developer 3ns</strong> {t('date_3ns')}
+              <ul className="list-disc list-inside ml-5 mb-3">
                 <li>{t("3n_1")}</li>
                 <li>{t("3n_2")}</li>
                 <li>{t("3n_3")}</li>
@@ -152,13 +151,12 @@ const About = () => {
                 <li>{t("3n_9")}</li>
                 <li>{t("3n_10")}</li>
               </ul>
-            </li>
-            <li>
-              <strong>Desarrollador Web en [Nombre de la Empresa]</strong> (Fecha de inicio - Fecha de finalización)
+              <strong>{t('walltrip_role')}</strong> {t('walltrip_date')}
               <ul className="list-disc list-inside ml-5">
-                <li>Implementé diseños responsivos y mejoré la experiencia del usuario en varios sitios web.</li>
+                <li>{t('wall_1')}</li>
+                <li>{t('wall_2')}</li>
+                <li>{t('wall_3')}</li>
               </ul>
-            </li>
           </ul>
         </div>
         <div>
