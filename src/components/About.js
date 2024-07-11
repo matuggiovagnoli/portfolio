@@ -26,7 +26,7 @@ const About = () => {
           <div className='w-full flex flex-wrap justify-center mt-3 gap-5' key="tech_skills">
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-center rounded-md animate-enter-2s'>
               <div className='flex flex-col items-center justify-center mb-2 rounded-t-md py-2'>
-                <img src={front} className='w-14 h-14'/>
+                <img src={front} alt='frontend logo' className='w-14 h-14'/>
                 <h3 className='text-center font-semibold'>{t('frontend_tech')}</h3>
               </div>
               <ul className='text-center'>
@@ -41,7 +41,7 @@ const About = () => {
             </div>
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-start rounded-md animate-enter-3s'>
               <div className='flex flex-col items-center justify-center mb-2 rounded-t-md py-2'>
-                <img src={back} className='w-14 h-14'/>
+                <img src={back} alt='backend logo' className='w-14 h-14'/>
                 <h3 className='text-center font-semibold'>{t('backend_tech')}</h3>
               </div>
               <ul className='text-center'>
@@ -53,7 +53,7 @@ const About = () => {
             </div>
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-start rounded-md animate-enter-4s'>
               <div className='flex flex-col items-center justify-start mb-2 rounded-t-md py-2'>
-                <img src={database} className='w-14 h-14'/>
+                <img src={database} alt='databe logo' className='w-14 h-14'/>
                 <h3 className='text-center font-semibold'>{t('database_tech')}</h3>
               </div>
               <ul className='text-center'>
@@ -82,21 +82,21 @@ const About = () => {
           <div className='w-full flex flex-wrap justify-center mt-3 gap-5' key="soft_skills">
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-center rounded-md animate-enter-2s'>
               <div className='flex flex-col items-center justify-center mb-2 rounded-t-md py-2'>
-                <img src={comunication} className='w-10 h-10'/>
+                <img src={comunication} alt='comunication logo' className='w-10 h-10'/>
                 <h3 className='text-center font-semibold'>{t('comunication_skills')}</h3>
               </div>
               <p>{t('')}</p>
             </div>
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-center rounded-md animate-enter-3s'>
               <div className='flex flex-col items-center justify-center mb-2 rounded-t-md py-2'>
-                <img src={team} className='w-10 h-10'/>
+                <img src={team} alt='team logo' className='w-10 h-10'/>
                 <h3 className='text-center font-semibold'>{t('team_player')}</h3>
               </div>
               <p>{t('')}</p>
             </div>
             <div className='w-full sm:w-1/2 md:w-1/4 border-[1px] border-black flex flex-col justify-center rounded-md animate-enter-4s'>
               <div className='flex flex-col items-center justify-center mb-2 rounded-t-md py-2'>
-                <img src={motivation} className='w-10 h-10'/>
+                <img src={motivation} alt='motivation logo' className='w-10 h-10'/>
                 <h3 className='text-center font-semibold'>{t('motivation')}</h3>
               </div>
               <p>{t('')}</p>

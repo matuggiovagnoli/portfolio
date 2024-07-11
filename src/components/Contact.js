@@ -69,25 +69,25 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex flex-col items-center justify-center p-4">
       <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-black">{t('contact')}</h2>
-      <form ref={form} onSubmit={sendEmail} className="bg-blue-200 p-6 rounded-lg shadow-md w-full max-w-lg space-y-4">
+      <form ref={form} onSubmit={sendEmail} className="bg-blue-200 p-4 rounded-lg shadow-md w-full max-w-md space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm text-gray-700 font-semibold mb-2">{t('name')}</label>
-          <input type="text" id="name" name="name" className="w-full p-2 border border-gray-300 rounded" />
+          <label htmlFor="name" className="block text-sm text-gray-700 font-semibold mb-1">{t('name')}</label>
+          <input type="text" id="name" name="name" className="w-full lg:h-8 p-2 border border-gray-300 rounded" />
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm text-gray-700 font-semibold mb-2">{t('email')}</label>
-          <input type="email" id="email" name="email" className="w-full p-2 border border-gray-300 rounded" />
+          <label htmlFor="email" className="block text-sm text-gray-700 font-semibold mb-1">{t('email')}</label>
+          <input type="email" id="email" name="email" className="w-full lg:h-8 p-2 border border-gray-300 rounded" />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
         </div>
         <div>
-          <label htmlFor="subject" className="block text-sm text-gray-700 font-semibold mb-2">{t('subject')}</label>
-          <input type="text" id="subject" name="subject" className="w-full p-2 border border-gray-300 rounded" />
+          <label htmlFor="subject" className="block text-sm text-gray-700 font-semibold mb-1">{t('subject')}</label>
+          <input type="text" id="subject" name="subject" className="w-full lg:h-8 p-2 border border-gray-300 rounded" />
           {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject}</p>}
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm text-gray-700 font-semibold mb-2">{t('message')}</label>
-          <textarea id="message" name="message" className="w-full p-2 border border-gray-300 rounded h-32"></textarea>
+          <label htmlFor="message" className="block text-sm text-gray-700 font-semibold mb-1">{t('message')}</label>
+          <textarea id="message" name="message" className="w-full p-2 border border-gray-300 rounded h-24"></textarea>
           {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
         </div>
         <div className="flex items-center justify-center">
