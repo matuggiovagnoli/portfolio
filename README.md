@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About
+This is a portfolio project showcasing the work of my work as a frontend developer. It includes various sections such as projects, skills, contact information, and more.
+
+## Libraries Used
+This portfolio project utilizes the following libraries:
+
+react-scroll: Enables smooth scrolling behavior within the application.
+react-toastify: Provides notifications to the user through toasts for actions like sending emails.
+react-i18next: Integrates internationalization (i18n) support for multi-language content.
+react-icons: Offers a set of customizable icons for use within the application.
+react-router-dom: Facilitates declarative routing for React applications, enabling navigation between different views or pages.
+i18next: Provides the core internationalization functionality for managing translations and language switching.
+tailwindcss: A utility-first CSS framework for building custom designs quickly.
+
 ## Available Scripts
 
 In the project directory, you can run:
