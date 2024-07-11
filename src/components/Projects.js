@@ -69,7 +69,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+    <section id="projects" className=" min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
       <h2 className="text-3xl sm:text-4xl font-bold mb-6">{t('projects')}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 mb-8">
         {projects.map((project, index) => (

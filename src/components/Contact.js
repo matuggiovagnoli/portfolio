@@ -72,17 +72,17 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail} className="bg-blue-200 p-4 rounded-lg shadow-md w-full max-w-md space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm text-gray-700 font-semibold mb-1">{t('name')}</label>
-          <input type="text" id="name" name="name" className="w-full lg:h-8 p-2 border border-gray-300 rounded" />
+          <input type="text" id="name" name="name" autoComplete='off' className="w-full lg:h-10 p-2 border border-gray-300 rounded" />
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
         </div>
         <div>
           <label htmlFor="email" className="block text-sm text-gray-700 font-semibold mb-1">{t('email')}</label>
-          <input type="email" id="email" name="email" className="w-full lg:h-8 p-2 border border-gray-300 rounded" />
+          <input type="email" id="email" name="email" className="w-full lg:h-10 p-2 border border-gray-300 rounded" />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
         </div>
         <div>
           <label htmlFor="subject" className="block text-sm text-gray-700 font-semibold mb-1">{t('subject')}</label>
-          <input type="text" id="subject" name="subject" className="w-full lg:h-8 p-2 border border-gray-300 rounded" />
+          <input type="text" id="subject" name="subject" autoComplete='off' className="w-full lg:h-10 p-2 border border-gray-300 rounded" />
           {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject}</p>}
         </div>
         <div>
@@ -91,7 +91,7 @@ const Contact = () => {
           {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
         </div>
         <div className="flex items-center justify-center">
-          <button type="submit" className="w-full sm:w-auto bg-black h-12 px-6 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-white">{t('send')}</button>
+          <button type="submit" className="w-full lg:w-auto sm:w-auto bg-black h-12 px-6 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-white">{t('send')}</button>
         </div>
       </form>
       <ToastContainer />
