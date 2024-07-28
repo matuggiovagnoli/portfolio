@@ -45,18 +45,17 @@ const Home = () => {
         </h2>
         <a
           href={cv}
-          download="CV.pdf"
           className="text-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 w-40 h-14 sm:w-48 sm:h-16 md:w-56 md:h-20 lg:w-64 lg:h-24"
         >
           {t('download_cv')}
         </a>
       </div>
       <div className="absolute bottom-5 w-screen flex flex-row sel self-end justify-around mt-4 z-50">
-        <div className="flex flex-row items-center space-x-2">
+        <div className="flex flex-row items-center space-x-2  transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-3 border-[1px] border-black rounded-md p-1">
           <FaGithub className="text-2xl md:text-4xl lg:text-5xl" />
           <a href="https://github.com/matuggiovagnoli" target="_blank" rel="noopener noreferrer" className="text-xl md:text-3xl lg:text-4xl">Github</a>
         </div>
-        <div className="flex flex-row items-center space-x-2">
+        <div className="flex flex-row items-center space-x-2 transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-3 border-[1px] border-black rounded-md p-1">
           <FaLinkedin className="text-2xl md:text-4xl lg:text-5xl" />
           <a href="https://www.linkedin.com/in/matias-daniel-g%C3%B3mez-giovagnoli/" target="_blank" rel="noopener noreferrer" className="text-xl md:text-3xl lg:text-4xl">Linkedin</a>
         </div>

@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
+import men1 from '../media/Men_talking_1.svg';
+import men2 from '../media/Men_talking_2.svg';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
@@ -67,27 +69,29 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col items-center justify-center p-4">
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-black">{t('contact')}</h2>
-      <form ref={form} onSubmit={sendEmail} className="bg-blue-200 p-4 rounded-lg shadow-md w-full max-w-md space-y-4">
+    <section id="contact" className="relative min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-t from-blue-400 to-gray-100">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-black z-30">{t('contact')}</h2>
+      <img src={men1} alt='person_1' className='absolute 2xl:left-[450px] lg:left-[70px] md:left-0 max-sm:hidden w-[400px] h-[400px] animate-slide-in-left z-10' />
+      <img src={men2} alt='person_2' className='absolute 2xl:right-[450px] lg:right-[70px] md:right-0 max-sm:hidden w-[400px] h-[400px] animate-slide-in-right z-10' />
+      <form ref={form} onSubmit={sendEmail} className="bg-slate-200 p-4 rounded-lg shadow-md w-full max-w-md md:w-2/5 space-y-4 z-10">
         <div>
           <label htmlFor="name" className="block text-sm text-gray-700 font-semibold mb-1">{t('name')}</label>
-          <input type="text" id="name" name="name" autoComplete='off' className="w-full lg:h-10 p-2 border border-gray-300 rounded" />
+          <input type="text" id="name" name="name" autoComplete='off' className="w-full lg:h-10 p-2 border-b-2 border-black bg-transparent outline-none" />
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
         </div>
         <div>
           <label htmlFor="email" className="block text-sm text-gray-700 font-semibold mb-1">{t('email')}</label>
-          <input type="email" id="email" name="email" className="w-full lg:h-10 p-2 border border-gray-300 rounded" />
+          <input type="email" id="email" name="email" className="w-full lg:h-10 p-2 border-b-2 border-black bg-transparent outline-none" />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
         </div>
         <div>
           <label htmlFor="subject" className="block text-sm text-gray-700 font-semibold mb-1">{t('subject')}</label>
-          <input type="text" id="subject" name="subject" autoComplete='off' className="w-full lg:h-10 p-2 border border-gray-300 rounded" />
+          <input type="text" id="subject" name="subject" autoComplete='off' className="w-full lg:h-10 p-2 border-b-2 border-black bg-transparent outline-none" />
           {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject}</p>}
         </div>
         <div>
           <label htmlFor="message" className="block text-sm text-gray-700 font-semibold mb-1">{t('message')}</label>
-          <textarea id="message" name="message" className="w-full p-2 border border-gray-300 rounded h-24"></textarea>
+          <textarea id="message" name="message" className="w-full lg:h-24 p-2 border-b-2 border-black bg-transparent outline-none"></textarea>
           {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
         </div>
         <div className="flex items-center justify-center">

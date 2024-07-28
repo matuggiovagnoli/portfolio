@@ -1,10 +1,11 @@
 import React from 'react';
 import './i18n';
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Header from './views/Header';
+import Home from './views/Home';
+import About from './views/About';
+import Projects from './views/Projects';
+import Contact from './views/Contact';
+import Footer from './views/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
