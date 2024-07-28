@@ -38,10 +38,10 @@ const ProjectItem = ({ project, index }) => {
           </h3>
           <p className="text-sm mb-4 max-sm:hidden">{t(project.description)}</p>
         </div>
-        <div className="flex flex-row w-full justify-center sm:justify-evenly space-y-2 sm:space-y-0 sm:space-x-4 max-sm:gap-2">
+        <div className="flex flex-row w-full justify-center sm:justify-evenly space-y-0 sm:space-x-4 max-sm:gap-2">
           <a
             href={project.url}
-            className={`px-4 max-sm:w-fit py-2 rounded ${
+            className={`px-4 max-sm:w-fit h-fit py-2 rounded ${
               project.url ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'
             }`}
             target="_blank"
