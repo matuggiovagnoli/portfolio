@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import cv from '../media/CV.pdf';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import portrait from "../media/portrait.png"
 
 const Home = () => {
   const { t } = useTranslation();
@@ -50,6 +51,7 @@ const Home = () => {
           {t('download_cv')}
         </a>
       </div>
+        <img id='portrait' src={portrait} alt="retrato" className='w-80 z-50 grayscale'/>
       <div className="absolute bottom-5 w-screen flex flex-row sel self-end justify-around mt-4 z-50">
         <div className="flex flex-row items-center space-x-2  transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-3 border-[1px] border-black rounded-md p-1">
           <FaGithub className="text-2xl md:text-4xl lg:text-5xl" />
