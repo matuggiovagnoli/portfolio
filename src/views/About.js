@@ -28,6 +28,7 @@ import ibm from "../media/ibm.png";
 import coder from "../media/coderhouse.png";
 import ceac from "../media/CEAC.png";
 import loftware from "../media/loftware.png";
+import codercert from "../media/coder.png"
 
 const About = () => {
   const { t } = useTranslation();
@@ -383,7 +384,7 @@ const About = () => {
               <img src={coder} alt="" className="w-48 lg:w-40 mb-4" />
               <li className="text-center">{t("coder_cert")} 2022</li>
               <a
-                href={coder}
+                href={codercert}
                 download="CoderHouse React"
                 className="text-xs sm:text-sm text-blue-400 hover:text-blue-600"
               >
